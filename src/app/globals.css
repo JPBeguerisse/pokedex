@@ -15,7 +15,66 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.poke-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 180px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.poke-card:hover {
+  transform: scale(1.05);
+}
+
+.poke-image {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 8px;
+}
+
+.poke-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 8px 0;
+}
+
+.poke-id {
+  font-size: 14px;
+  color: #666;
+}
+
+.poke-types {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.poke-type-icon {
+  width: 30px;
+  height: 30px;
 }
